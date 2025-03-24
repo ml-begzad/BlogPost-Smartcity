@@ -39,14 +39,14 @@ createHTML()
 function createHTML(){
   let blogsHtml = "";
   
-  const previewlength = 100;
+  const previewlength = 50;
   storedBlogs.forEach((blog) => {
     const lessContent =
     blog.content.length > previewlength
     ? blog.content.substring(0, previewlength)
     : blog.content;
     
-    blogsHtml += `<div class="generalContainer js-general-container flex flex-col gap-0 justify-center mx-auto border border-gray-300 p-5 rounded-lg lg:w-[80%]">    
+    blogsHtml += `<div class="generalContainer js-general-container flex flex-col gap-0 justify-center mx-auto border border-gray-300 p-5 rounded-lg lg:w-[80%] max-w-[300px]">    
     <div class="details flex flex-row justify-between p-1">
     <div class=" js-author text-[9px] text-center lg:text-[15px]">
                         Author: ${blog.author}
@@ -54,21 +54,21 @@ function createHTML(){
                         <div class="text-[9px] lg:text-[15px] text-center">${blog.date}</div>
                         </div>
                         
-                        <div class="blog-img justify-center items-center w-3xl">
-                        <img src="${blog.image}" alt="" class="w-[300px] h-auto rounded-md object-cover">
+                        <div class="blog-img justify-center items-center w-[250px]">
+                        <img src="${blog.image}" alt="" class="w-[250px] h-auto rounded-md object-cover">
                         </div>
                         
                         <div class="about text-left  flex flex-col justify-between p-1">
                         <div class="title js-title font-serif px-2 text-ellipsis font-bold text-sm lg:text-[20px]">
                         ${blog.title}
-                    </div>
-                    <div class="content leading-5 lg:text-[18px] overflow-ellipsis">
-                    ${lessContent}
-                    <a href="./details.html" class="js-readMore underline text-yellow-600" data-blog-id=${blog.id} underline text-yellow-500">read more...</a>
-                    </div>
-                    </div>
-                    </div>`;
-                  });
+                        </div>
+                        <div class="content leading-5 max-w-[250px] lg:text-[18px] lg:w-[400px] ">
+                        ${lessContent}
+                        <a href="./details.html" class="js-readMore underline text-yellow-600" data-blog-id=${blog.id} underline text-yellow-500">read more...</a>
+                        </div>
+                        </div>
+      </div>`;
+    });
 let container=document.querySelector(".js-container");
 container.innerHTML = blogsHtml;
 
