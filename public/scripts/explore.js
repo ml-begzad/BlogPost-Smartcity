@@ -54,8 +54,8 @@ function createHTML(){
                         <div class="text-[9px] lg:text-[15px] text-center">${blog.date}</div>
                         </div>
                         
-                        <div class="blog-img justify-center items-center">
-                        <img src="${blog.image}" alt="" class="w-[600px] h-auto rounded-md object-cover">
+                        <div class="blog-img justify-center items-center w-3xl">
+                        <img src="${blog.image}" alt="" class="w-[300px] h-auto rounded-md object-cover">
                         </div>
                         
                         <div class="about text-left  flex flex-col justify-between p-1">
