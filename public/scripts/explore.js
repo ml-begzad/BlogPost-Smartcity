@@ -1,4 +1,4 @@
-export const existingBlog = [
+export let existingBlog = [
   {
     id: "ID1",
     title: "Life changing technology",
