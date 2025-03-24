@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="h-[100%]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Blog</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0xwikBGkvDJzpgMQqwW0BbN-SJPpsP9JBg&s"
+    />
+  </head>
+  <body>
+    <header
+      class="head bg-yellow-500 text-white grid grid-cols-2 p-1 mx-auto justify-around w-auto h-[50px] fixed top-0 left-0 right-0 px-[15px]"
+    >
+      <section class="flex flex-row gap-1 first-section justify-start items-center w-[80%] mx-auto">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0xwikBGkvDJzpgMQqwW0BbN-SJPpsP9JBg&s"
+          alt="blog's logo"
+          class="bg-white rounded-full w-auto max-h-[40px]"
+        />
+        <div class="name font-serif lg:text-[15px] hidden lg:flex ">Blog Post App</div>
+      </section>
+
+      <!-- <section class="middle-section flex justify-center items-center w-[100%] col-span-2 mx-auto">
+            <form action="" method="" class="search-form mx-auto flex flex-row justify-center items-center w-full max-w-lg">
+                <input type="text" id="search-input" placeholder="Search" class="search-inpt text-black bg-white p-1 flex-1 font-[16px] outline-yellow-600 rounded-l-sm mx-auto w-full"/>
+                <button type="submit" class="search-btn bg-white w-8 p-2 rounded-r-sm"><img src="./images/search-icon.png" alt=""></button>
+            </form>
+        </section> -->
+
+      <section
+        class="third-section flex justify-end items-center mx-auto p-[6px] w-full"
+      >
+        <!-- <img src="./images/hamburger-menu.png" alt="" class="max-w-[40px]"> -->
+        <div class="right-links flex flex-row gap-3 lg:mr-[90px]">
+          <a href="./index.html" class="font-bold">Home</a>
+          <a href="explore.html" class="font-bold">Blogs</a>
+        </div>
+      </section>
+    </header>
+
+    <main class="main-part mt-[40px] mx-auto max-w-[890px] justify-center">
+      <div
+        class="container grid grid-cols-1 gap-5 justify-center items-center overflow-y-auto p-8 max-w-[890px]"
+      >
+        <div
+          class="form-div flex justify-center items-center mx-auto w-[100%] p-2"
+        >
+          <form action="" class="flex flex-col gap-4 lg:w-[65%]">
+            <label for="title" class="text-xl font-bold text-yellow-500"
+              >Create Your Blog</label
+            >
+
+            <input
+              type="text"
+              name="title"
+              class="js-title border border-yellow-300 p-2 outline-yellow-600"
+              placeholder="Title"
+            />
+            <textarea
+              class="js-content flex justify-center items-center mx-auto w-full p-2 border border-yellow-300 outline-yellow-600"
+              name="content"
+              id="blog-content"
+              rows="4"
+              cols="50"
+              placeholder="Content..."
+            ></textarea>
+            <div class="author-date flex flex-row gap-1 w-[100%]">
+              <input
+                type="text"
+                name="author"
+                placeholder="Author"
+                class="js-author border border-yellow-300 p-2 w-[50%] outline-yellow-600"
+              />
+              <input
+                type="date"
+                name="date"
+                class="js-date text-sm bg-yellow-400 text-white rounded-[8px] shadow-2xs shadow-yellow-300 outline-yellow-600 font-bold hover:bg-yellow-600 transition duration-500 ease-in-out cursor-pointer border border-yellow-300 p-2 w-[50%]"
+              />
+            </div>
+            <div
+              class="btns flex flex-col gap-1 justify-center items-center w-full text-white font-bold"
+            >
+              <img
+                src=""
+                alt=""
+                class="uploadedImg js-uploadedImg max-w-[200px] max-h-[200px] hidden"
+              />
+              <p class="img-name text-black"></p>
+              <div
+                class="bg-yellow-400 p-1 rounded-[8px] text-sm w-[100%] shadow-2xs shadow-yellow-300 hover:bg-yellow-600 transition duration-500 ease-in-out cursor-pointer"
+              >
+                <input
+                  type="file"
+                  name="file"
+                  id="file"
+                  accept=".jpg,.jpeg"
+                  class="upload-file hidden"
+                />
+                <label for="file" class="text-center cursor-pointer block"
+                  >Uplead image</label
+                >
+              </div>
+
+              <button
+                class="save-btn bg-yellow-400 p-1 rounded-[8px] text-sm w-[100%] shadow-2xs shadow-yellow-300 hover:bg-yellow-600 transition duration-500 ease-in-out cursor-pointer"
+              >
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    
+    <script type="module" src="./scripts/create.js"></script>
+  </body>
+</html>

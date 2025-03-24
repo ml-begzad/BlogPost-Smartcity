@@ -1,0 +1,11 @@
+@import "tailwindcss";
+.displayImg{
+    @apply flex;
+}
+
+.hideBlog{
+    @apply hidden;
+}
+.readmore{
+    @apply flex;
+}

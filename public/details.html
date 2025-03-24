@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="h-[100%]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0xwikBGkvDJzpgMQqwW0BbN-SJPpsP9JBg&s"
+    />
+  </head>
+  <body>
+    <header
+      class="head bg-yellow-500 text-white grid grid-cols-2 p-1 mx-auto justify-around w-auto h-[50px] fixed top-0 left-0 right-0 px-[15px]"
+    >
+      <section class="first-section justify-start items-center w-[80%] mx-auto">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0xwikBGkvDJzpgMQqwW0BbN-SJPpsP9JBg&s"
+          alt="blog's logo"
+          class="bg-white rounded-full w-auto max-h-[40px]"
+        />
+      </section>
+
+      <!-- <section
+        class="middle-section flex justify-center items-center w-[100%] col-span-2 mx-auto"
+      >
+        <form
+          action=""
+          method=""
+          class="search-form mx-auto flex flex-row justify-center items-center w-full max-w-lg"
+        >
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search blog's title"
+            class="search-inpt text-black bg-white p-1 flex-1 font-[16px] outline-yellow-600 rounded-l-sm mx-auto w-full"
+          />
+          <button
+            type="submit"
+            class="search-btn bg-white w-8 p-2 rounded-r-sm"
+          >
+            <img src="./images/search-icon.png" alt="" />
+          </button>
+        </form>
+      </section> -->
+
+      <section
+        class="third-section flex justify-end items-center mx-auto p-[6px] w-full"
+      >
+        <!-- <img src="./images/hamburger-menu.png" alt="" class="max-w-[40px]"> -->
+        <div class="right-links flex flex-row gap-3 lg:mr-20">
+          <a href="./index.html" class="font-bold">Home</a>
+          <a href="explore.html" class="font-bold">Blogs</a>
+        </div>
+      </section>
+    </header>
+    <main class="main-part mt-[40px] mx-auto max-w-[890px] justify-center">
+      <div
+        class="container js-container grid grid-cols-1 gap-5 justify-center items-center overflow-y-auto p-8"
+      >
+        <div
+          class="generalContainer js-general-container flex flex-col gap-0 justify-center mx-auto border border-gray-300 p-5 rounded-lg lg:w-[80%]"
+        >
+          <div class="details flex flex-row justify-between p-1">
+            <div class="js-author text-[9px] text-center"></div>
+            <div class="js-date text-[9px] text-center"></div>
+          </div>
+
+          <div class="blog-img js-blog-img justify-center items-center ">
+            <img
+              src=""
+              alt=""
+              class="max-w-[100%] justify-center items-center max-h-[400px] rounded-md object-cover"
+            />
+          </div>
+
+          <div class="about text-left flex flex-col justify-between p-1">
+            <div
+              class="title js-title font-serif px-2 text-ellipsis font-bold text-sm"
+            ></div>
+            <div class="content js-content leading-5">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./scripts/details.js"></script>
+  </body>
+</html>

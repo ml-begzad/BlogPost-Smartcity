@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="h-[100%]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0xwikBGkvDJzpgMQqwW0BbN-SJPpsP9JBg&s"
+    />
+  </head>
+  <body>
+    <header
+      class="head bg-yellow-500 text-white grid grid-cols-4 p-1 mx-auto justify-around w-auto h-[50px] fixed top-0 left-0 right-0 px-[15px]"
+    >
+      <section class="flex flex-row gap-1 first-section justify-start items-center w-[80%] mx-auto">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0xwikBGkvDJzpgMQqwW0BbN-SJPpsP9JBg&s"
+          alt="blog's logo"
+          class="bg-white rounded-full w-auto max-h-[40px]"
+        />
+        <div class="name font-serif lg:text-[15px] hidden lg:flex ">Blog Post App</div>
+      </section>
+
+      <section
+        class="middle-section flex justify-center items-center w-[100%] col-span-2 mx-auto"
+      >
+        <form
+          action=""
+          method=""
+          class="search-form mx-auto flex flex-row justify-center items-center w-full max-w-lg"
+        >
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search blogs"
+            class="search-inpt  text-black bg-white p-1 flex-1 font-[16px] outline-yellow-600 rounded-l-sm mx-auto w-full"
+          />
+          <button
+            type="submit"
+            class="search-btn bg-white w-8 p-2 rounded-r-sm"
+          >
+            <img src="./images/search-icon.png" alt="" />
+          </button>
+        </form>
+      </section>
+
+      <section
+        class="third-section flex justify-end items-center mx-auto p-[6px] w-full"
+      >
+        <img src="./images/hamburger-menu.png" alt="" class="max-w-[40px] lg:hidden">
+        <div class="hidden lg:flex right-links flex-row gap-3 ">
+          <a href="./index.html" class="font-bold">Home</a>
+          <a href="./create.html" class="font-bold">Create</a>
+        </div>
+      </section>
+    </header>
+    <main class="main-part mt-[40px] mx-auto max-w-[890px] justify-center lg:w-[590]">
+      <div
+        class="container js-container grid grid-cols-1 gap-5 justify-center items-center overflow-y-auto p-8">
+       
+    </main>
+    
+    <footer class="head bg-yellow-200 text-yellow-600 grid grid-cols-2 lg:grid-cols-3 p-1 mx-auto justify-around lg:justify-between w-auto h-[100px] px-[15px]">
+
+      
+      <section class="middle-section flex justify-center items-center w-full mx-auto col-span-2 lg:col-span-1 lg:justify-start">
+        <div class="flex flex-row gap-4 lg:flex lg:flex-col lg:gap-1 justify-center items-center w-[100%] lg:justify-end lg:border-r-1">
+          <div class="follow w-full text-right lg:text-center">Follow us on :</div>
+          <div class="socialMedia flex flex-row gap-1 w-[100%] lg:justify-center">
+            <a href=""><img src="./images/facebook.png" alt="facebook" class="size-4 lg:size-5"></a>
+            <a href=""><img src="./images/insta.png" alt="instagram" class="size-4 lg:size-5"></a>
+            <a href=""><img src="./images/twitter.png" alt="twitter" class="size-4 lg:size-5"></a>
+            <a href=""><img src="./images/whatsapp.png" alt="whatsapp" class="size-4 lg:size-5"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="third-section hidden lg:flex justify-center items-center mx-auto p-[6px] w-full mt-5">
+        <div class="follow">Copyright @ 2025. All Rights Reserved </div>
+      </section>
+
+        <section class="third-section hidden lg:flex flex-col justify-end items-center mx-auto p-[6px] w-full">
+          <div class="flex flex-row lg:flex lg:flex-col lg:gap-1 justify-center items-center w-[100%] lg:justify-end lg:border-l-1 lg:h-[50px] lg:mb-3">
+            <div class="follow">Recieve The Updates by:</div>
+            <div class="btns flex flex-row gap-3 w-[200px] justify-center items-center">
+              <a href="" class=" p-1 rounded-[8px] text-sm  shadow-2xs shadow-yellow-300 hover:text-blue-600 transition duration-500 ease-in-out cursor-pointer text-center">
+                  <button class="create-btn">
+                      Email
+                  </button>
+              </a>
+              <a href="" class="p-1 rounded-[8px] text-sm  shadow-2xs shadow-yellow-300 hover:text-blue-600 transition scale-3d cursor-pointer text-center">
+                  <button class="explore-btn ">
+                      Text
+                  </button>
+              </a>
+                    </div>
+          </div>
+        </section>
+    </footer>
+    <script type="module" src="./scripts/explore.js"></script>
+  </body>
+</html>
